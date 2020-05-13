@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article>
+  <img src="/images/{{ page.image }}" />
+  <section>
+    {% include post-header.html post=page %}
+  </section>
+  <section>
+    {{ page.content }}
+    <a href="#">
+      <img class="wolf-closing" src="/images/wolf.png" />
+    </a>
+  </section>
+
+  {% include disqus.html %}
+</article>

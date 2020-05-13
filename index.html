@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+<article>
+  <section class="preview">
+    <a href="{{ post.url }}">
+      <img src="/images/{{ post.image }}" loading="lazy" />
+      {% include post-header.html post=post %}
+      <p class="fade">
+        {{ post.content | strip_html | truncate: 500, "" | rstrip }}...
+      </p>
+    </a>
+  </section>
+</article>
+{% endfor %}

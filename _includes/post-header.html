@@ -1,0 +1,8 @@
+<header>
+  <h1>{{ include.post.title }}</h1>
+  <h2>{{ include.post.description }}</h2>
+  <h3>
+    {{ include.post.date | date_to_string: "ordinal", "US" }} · {% include
+    read-time.html content=include.post.content %}
+  </h3>
+</header>

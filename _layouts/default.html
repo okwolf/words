@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% seo %}
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.name }} - {{ site.description }}"
+      href="/feed.xml"
+    />
+    <link rel="shortcut icon" type="image/png" href="/images/wolf.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="title-container">
+        <a href="/">
+          <span class="wolf">wolf</span>
+          <span class="words">WORDS</span>
+        </a>
+        <div class="description">{{ site.description }}</div>
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer class="footer">
+      {% include svg-icons.html %}
+    </footer>
+
+    {% include analytics.html %}
+  </body>
+</html>

@@ -1,0 +1,22 @@
+name: wolfWORDS
+description: by a barely functional human
+avatar: https://avatars2.githubusercontent.com/u/3735164?s=64&u=0730d3df526c3c5285c54a8e251d6ea73000dd89&v=4
+footer-links:
+  github: okwolf
+  instagram: okwolfgang
+  linkedin: okwolf
+  twitter: okwolf
+# disqus:
+google_analytics: UA-27540993-2
+permalink: /:slug
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+sass:
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
