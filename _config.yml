@@ -1,6 +1,10 @@
 name: wolfWORDS
 description: by a barely functional human
 future: true
+author: Wolfgang Wedemeyer
+twitter:
+  username: okwolf
+  card: summary
 footer-links:
   github: okwolf
   instagram: okwolfgang

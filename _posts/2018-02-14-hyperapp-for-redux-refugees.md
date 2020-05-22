@@ -2,7 +2,7 @@
 layout: post
 title: Hyperapp for Redux refugees
 description: How I learned to stop worrying and love the function
-image: hyperapp-motorcycle.jpg
+image: /images/hyperapp-motorcycle.jpg
 ---
 
 ## I love Redux.

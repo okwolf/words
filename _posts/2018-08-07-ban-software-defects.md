@@ -2,7 +2,7 @@
 layout: post
 title: Ban software defects
 description: Testing considered harmful
-image: fukushima-protesters.jpg
+image: /images/fukushima-protesters.jpg
 ---
 
 ## The frontend JavaScript ecosystem is full of magical tools. 🔮

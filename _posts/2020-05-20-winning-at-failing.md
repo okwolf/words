@@ -2,7 +2,7 @@
 layout: post
 title: Winning at failing
 description: Make failure easier, not harder
-image: modern-man-stressed.jpg
+image: /images/modern-man-stressed.jpg
 ---
 
 > If it's a good idea and it gets you excited, try it, and if it bursts into flames, that's going to be exciting too. People always ask, "What is your greatest failure?" I always have the same answer: We're working on it right now, it's gonna be awesome!

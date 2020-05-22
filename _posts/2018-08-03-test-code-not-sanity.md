@@ -2,7 +2,7 @@
 layout: post
 title: Test code, not sanity
 description: Simple testing simply made simple
-image: water-testing.jpg
+image: /images/water-testing.jpg
 ---
 
 Simple is a word with a long and sordid history. The meaning has gotten watered down over the years to the point where today simple is used as a generic inoffensive term of praise. Let's take a quick tour through some of the common connotations for simple that are used and see how they would apply to software testing.
