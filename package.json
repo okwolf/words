@@ -1,0 +1,16 @@
+{
+  "name": "words",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "prettier": "2.0.5"
+  },
+  "scripts": {
+    "format": "prettier --write **/*.{md,scss}"
+  },
+  "prettier": {
+    "printWidth": 60,
+    "trailingComma": "none",
+    "arrowParens": "avoid"
+  }
+}

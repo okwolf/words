@@ -148,10 +148,16 @@ In addition to the normal rules of function composition, remember that your HOAs
 hoa3(hoa2(hoa1(app)))(state, actions, view, document.body);
 
 // Or with a standard-issue compose function
-compose(hoa3, hoa2, hoa1)(app)(state, actions, view, document.body);
+compose(hoa3, hoa2, hoa1)(app)(
+  state,
+  actions,
+  view,
+  document.body
+);
 
 // Compose plays nicely with using different HOAs per environment
-const hoas = NODE_ENV === "production" ? productionHoas : devHoas;
+const hoas =
+  NODE_ENV === "production" ? productionHoas : devHoas;
 compose(...hoas)(app)(state, actions, view, document.body);
 ```
 
