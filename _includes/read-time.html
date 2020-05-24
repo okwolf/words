@@ -1,1 +1,4 @@
-<span>{{ include.content | number_of_words | divided_by:250 }} min read</span>
+<span title="{{ include.content | number_of_words }} words"
+  >{{ include.content | number_of_words | divided_by:250 }}
+  min read</span
+>
