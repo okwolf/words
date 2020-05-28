@@ -2,14 +2,28 @@
 <html>
   <head>
     {% seo %}
-    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/index.css"
+    />
     <link
       rel="alternate"
       type="application/rss+xml"
       title="{{ site.name }} - {{ site.description }}"
       href="/feed.xml"
     />
-    <link rel="shortcut icon" type="image/png" href="/images/wolf.png" />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="/sitemap.xml"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/images/wolf.png"
+    />
   </head>
 
   <body>
@@ -19,7 +33,9 @@
           <span class="wolf">wolf</span>
           <span class="words">WORDS</span>
         </a>
-        <div class="description">{{ site.description }}</div>
+        <div class="description">
+          {{ site.description }}
+        </div>
       </div>
     </header>
 
