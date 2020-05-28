@@ -114,8 +114,36 @@ article {
         color: rgba(var(--text-color), 0.666);
       }
       h3 {
+        display: flex;
         font-size: 1rem;
         color: rgba(var(--text-color), 0.5);
+        & > span {
+          margin-right: 0.5rem;
+        }
+        .share-buttons {
+          display: flex;
+          align-items: center;
+          & > a {
+            height: 36px;
+            width: 32px;
+            & > svg {
+              height: 16px;
+              fill: rgba(var(--text-color), 0.75);
+            }
+            &.facebook:hover > svg {
+              fill: #3b5998;
+            }
+            &.twitter:hover > svg {
+              fill: #55acee;
+            }
+            &.linkedin:hover > svg {
+              fill: #0077b5;
+            }
+            &.mail:hover > svg {
+              fill: #7d7d7d;
+            }
+          }
+        }
       }
     }
 
