@@ -69,6 +69,11 @@ a {
 article {
   img {
     width: 100%;
+    &.centered {
+      display: block;
+      margin: 0 auto;
+      width: inherit;
+    }
   }
   section {
     font-size: 1.2rem;
