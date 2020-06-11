@@ -31,7 +31,11 @@
       <a href="/wolf"><img src="/images/wolf.png" /></a>
 
       <div class="title-container">
+      {% if page.draft %}
+        <a href="/drafts">
+      {% else %}
         <a href="/">
+      {% endif %}
           <span class="wolf">wolf</span>
           <span class="words">WORDS</span>
         </a>

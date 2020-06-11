@@ -82,6 +82,20 @@ article {
       width: inherit;
     }
   }
+  .draft-cover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      position: absolute;
+      top: 100%;
+      transform: rotate(-25deg);
+      font-size: 15vw;
+      color: rgba(var(--text-color), 0.333);
+      pointer-events: none;
+    }
+  }
   section {
     font-size: 1.2rem;
     max-width: 48rem;

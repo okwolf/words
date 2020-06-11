@@ -1,6 +1,7 @@
+{% if page.title %}
 <span class="share-buttons">
   <a
-    href="https://www.facebook.com/share.php?u={{ site.url }}{{ include.post.url }}"
+    href="https://www.facebook.com/share.php?u={{ site.url }}{{ page.url }}"
     target="_blank"
     class="facebook"
     title="Share this on Facebook"
@@ -15,7 +16,7 @@
     </svg>
   </a>
   <a
-    href="https://twitter.com/intent/tweet?text={{ include.post.title }}&url={{ site.url }}{{ include.post.url }}"
+    href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}"
     target="_blank"
     class="twitter"
     title="Share this on Twitter"
@@ -30,7 +31,7 @@
     </svg>
   </a>
   <a
-    href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ include.post.url }}&title={{ include.post.title }}&summary={{ include.post.description }}"
+    href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}"
     target="_blank"
     class="linkedin"
     title="Share this on Linkedin"
@@ -45,7 +46,7 @@
     </svg>
   </a>
   <a
-    href="mailto:?&body={{ site.url }}{{ include.post.url }}&subject={{ include.post.title }}"
+    href="mailto:?&body={{ site.url }}{{ page.url }}&subject={{ page.title }}"
     target="_blank"
     class="mail"
     title="Share this through Email"
@@ -60,3 +61,4 @@
     </svg>
   </a>
 </span>
+{% endif %}

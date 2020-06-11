@@ -3,7 +3,14 @@ layout: default
 ---
 
 <article>
+  {% if page.draft %}
+  <div class="draft-cover">
+    <img src="{{ page.image }}" />
+    <span>DRAFT</span>
+  </div>
+  {% else %}
   <img src="{{ page.image }}" />
+  {% endif %}
   <section>
     {% include post-header.html post=page %}
   </section>

@@ -2,11 +2,15 @@
 layout: default
 ---
 
-{% for post in site.posts %} {% unless post.draft %}
+{% for post in site.posts %} {% if post.draft %}
 <article>
   <section class="preview">
     <a href="{{ post.url }}">
-      <img src="{{ post.image }}" loading="lazy" />
+      <div class="draft-cover">
+        <img src="{{ post.image }}" loading="lazy" />
+        <span>DRAFT</span>
+      </div>
+
       {% include post-header.html post=post %}
       <p class="fade">
         {{ post.content | strip_html | truncate: 500, "" |
@@ -15,4 +19,4 @@ layout: default
     </a>
   </section>
 </article>
-{% endunless %} {% endfor %}
+{% endif %} {% endfor %}
