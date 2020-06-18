@@ -9,7 +9,9 @@ Simple is a word with a long and sordid history. The meaning has gotten watered 
 
 ## easy
 
-This is one of the more commonly used definitions of simple, and likely one of the most dangerous as well. [Rich Hickey](https://twitter.com/richhickey) (Clojure's benevolent dictator for life) gave an entire talk about [simple vs easy](https://youtu.be/rI8tNMsozo0?t=50s), but to summarize: easy is subjective and simple is objective. This measure depends on individual ability and experience more than anything universally measurable. The ease of a task is inversely proportional to the effort and pain needed to accomplish it.
+This is one of the more commonly used definitions of simple, and likely one of the most dangerous as well. [Rich Hickey](https://twitter.com/richhickey) (Clojure's benevolent dictator for life) gave an entire talk about simple vs easy, but to summarize: easy is subjective and simple is objective. This measure depends on individual ability and experience more than anything universally measurable. The ease of a task is inversely proportional to the effort and pain needed to accomplish it.
+
+{% include youtube.html id="rI8tNMsozo0?start=50" %}
 
 When applied to the world of testing, this sort of mindset leads to [snapshot tests](https://facebook.github.io/jest/docs/en/snapshot-testing.html) and similar approaches. While these are certainly _easy_ to setup and write, I personally find them to be fairly low value. They are documenting and blindly trusting existing software implementations instead of specifying what the behavior of the software _should_ be.
 

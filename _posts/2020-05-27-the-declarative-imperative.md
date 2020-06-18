@@ -60,7 +60,9 @@ Those of you thinking other popular libraries like React do a better job of stay
 
 Then [Redux](https://redux.js.org) came onto the scene, and for a time the reducers were testable, and there was much rejoicing. Function components could use state and remain pure. But there was still no good solution for the lifecycles and async code. Also, the natives were getting restless about the boilerplate.
 
-Dan Abramov introduced [hooks](https://reactjs.org/docs/hooks-intro.html) at [React Conf 2018](https://youtu.be/dpw9EHDh2bM?t=1071) to great fanfare. Even though hooks are "completely opt-in" and not intended to replace `class` components, the community quickly embraced them and by now most React libraries and apps have adopted them.
+Dan Abramov introduced [hooks](https://reactjs.org/docs/hooks-intro.html) at React Conf 2018 to great fanfare. Even though hooks are "completely opt-in" and not intended to replace `class` components, the community quickly embraced them and by now most React libraries and apps have adopted them.
+
+{% include youtube.html id="dpw9EHDh2bM?start=1071" %}
 
 The major promise of hooks is that your function components gained superpowers - giving them access to the remaining React APIs that previously required writing a `class` component. Let's take a look at an example from the React docs of what using these hooks looks like:
 
@@ -95,7 +97,9 @@ To top it all off - forget about unit testing the logic in components that use h
 
 ## get hyped
 
-Fear not, dear reader, for there are solutions out there embracing a functional and declarative approach to building user interfaces. The [Elm](https://elm-lang.org) language and architecture are the most established players in this space since 2012. Instead of mixing side effects into the view, they are separated from the app code and represented with a data structure that the Elm runtime uses to execute your intent. This approach is called [effects as data](https://youtu.be/6EdXaWfoslc). Lispy languages adopt a similar philosophy of code as data.
+Fear not, dear reader, for there are solutions out there embracing a functional and declarative approach to building user interfaces. The [Elm](https://elm-lang.org) language and architecture are the most established players in this space since 2012. Instead of mixing side effects into the view, they are separated from the app code and represented with a data structure that the Elm runtime uses to execute your intent. This approach is called effects as data. Lispy languages adopt a similar philosophy of code as data.
+
+{% include youtube.html id="6EdXaWfoslc" %}
 
 Those who prefer to stay in the realm of JavaScript - instead of treating it as a compile target - while still retaining the benefits of Elm have a better option. [Hyperapp](https://hyperapp.dev) is the tiny framework for building purely functional, declarative web apps in JavaScript. The latest version comes with support for representing effects as data, along with subscriptions for those pesky asynchronous event streams mentioned earlier. Like Elm, the view is always a pure function of the state. Let's take a look at one possible Hyperapp version of the previous React hooks example component:
 

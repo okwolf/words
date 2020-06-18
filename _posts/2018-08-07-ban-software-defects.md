@@ -43,7 +43,9 @@ $ du -hd 0 node_modules
 
 It turned out all I needed to describe my tests was a way to group them together with descriptions and provide two values to compare for the test assertion itself. The only communities I saw getting this right are outside of JavaScript. [Elm](https://elm-lang.org) — for example, already pushes a purely functional approach and provides [a test library](https://package.elm-lang.org/packages/elm-explorations/test/latest) that falls more closely in line with my philosophy here, where each test must return an `Expectation` that is evaluated to determine if the test passed.
 
-Elm also advocates for [_effects as data_](https://youtu.be/6EdXaWfoslc) for their approach to removing side effects from application code and returning data that describes what effect you want performed on your behalf and what to do with the results, if any. A native JavaScript approach for this will be shipping in the next major version of the [Hyperapp](https://github.com/hyperapp/hyperapp/pull/726) web app micro-framework and is available today in my [`hyperapp-fx`](https://github.com/hyperapp/fx) library. I decided to take this all the way to its logical conclusion and provide _tests as data_.
+Elm also advocates for _effects as data_ for their approach to removing side effects from application code and returning data that describes what effect you want performed on your behalf and what to do with the results, if any. A native JavaScript approach for this will be shipping in the next major version of the [Hyperapp](https://github.com/hyperapp/hyperapp/pull/726) web app micro-framework and is available today in my [`hyperapp-fx`](https://github.com/hyperapp/fx) library. I decided to take this all the way to its logical conclusion and provide _tests as data_.
+
+{% include youtube.html id="6EdXaWfoslc" %}
 
 ### _Let's take a look 👀_
 
