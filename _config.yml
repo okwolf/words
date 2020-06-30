@@ -17,6 +17,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-paginate
+paginate: 5
 sass:
   style: compressed
 exclude:

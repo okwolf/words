@@ -2,7 +2,8 @@
 layout: default
 ---
 
-{% for post in site.posts %} {% unless post.draft %}
+{% include paginate.html %} {% for post in paginator.posts
+%} {% unless post.draft %}
 <article>
   <section class="preview">
     <a href="{{ post.url }}">
@@ -15,4 +16,4 @@ layout: default
     </a>
   </section>
 </article>
-{% endunless %} {% endfor %}
+{% endunless %} {% endfor %} {% include paginate.html %}
