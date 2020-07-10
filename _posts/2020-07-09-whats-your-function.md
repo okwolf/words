@@ -5,7 +5,7 @@ description: The seminal seminar on simple
 image: /images/math-board.jpg
 ---
 
-> Note: This article is a written companion to the following video about functions from my brand new [barely functional dev](https://www.youtube.com/channel/UCld0nRHCzNEKsZcGGa9xcoQ) channel.
+> Note: This article is a written companion to the following video about functions from my brand new [barely functional dev](https://www.youtube.com/c/barelyfunctionaldev) channel.
 
 {% include youtube.html id="ezItUZaHGuM" %}
 
@@ -13,7 +13,7 @@ My programming career has taken several turns; however, none of them have been a
 
 Selling the project to the right people would put me much closer to the cutting edge of technology and provide the freedom to experiment with different design patterns that (while not exactly new) were fresh, thriving, and more in line with my philosophy. I joined the community at a time when functional programming was going through a new renaissance. Practiced modern artisans shared their craft with the world in the form of great content explaining functional programming. This content allowed me to learn, convince, and eventually train the skeptics and new practitioners, and I am _very_ grateful for them.
 
-I would like to give special recognition to [@mpj](https://twitter.com/mpjme) of [Fun Fun Function](https://www.youtube.com/c/funfunfunction), which has been especially useful to me along my journey. Thanks to your videos, I started feeling more comfortable in JavaScript and started contributing to frameworks like [Hyperapp](https://hyperapp.dev) and eventually publishing [libraries](https://github.com/okwolf/hyperapp-fx) with my ideas. That experience helped me land my dream job where I get to hack on a functional frontend framework. Now I'm doing my part to pay it forward, sharing my knowledge by writing these posts, giving lots of technical talks worldwide, and finally launching my [new channel](https://www.youtube.com/channel/UCld0nRHCzNEKsZcGGa9xcoQ) after lurking and taking notes for years. It was bittersweet timing to hear that @mpj is now moving on to something else (see below). I wish you all the best and enjoy the next chapter in your life.
+I would like to give special recognition to [@mpj](https://twitter.com/mpjme) of [Fun Fun Function](https://www.youtube.com/c/funfunfunction), which has been especially useful to me along my journey. Thanks to your videos, I started feeling more comfortable in JavaScript and started contributing to frameworks like [Hyperapp](https://hyperapp.dev) and eventually publishing [libraries](https://github.com/okwolf/hyperapp-fx) with my ideas. That experience helped me land my dream job where I get to hack on a functional frontend framework. Now I'm doing my part to pay it forward, sharing my knowledge by writing these posts, giving lots of technical talks worldwide, and finally launching my [new channel](https://www.youtube.com/c/barelyfunctionaldev) after lurking and taking notes for years. It was bittersweet timing to hear that @mpj is now moving on to something else (see below). I wish you all the best and enjoy the next chapter in your life.
 
 {% include youtube.html id="IfHWE36B1go" %}
 
