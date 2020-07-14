@@ -27,4 +27,4 @@ Simple unit testing for JavaScript using [tests as data](/ban-software-defects#e
 
 ### [paltry](https://github.com/paltry/paltry)
 
-Paltry creates and updates a portable development environment for recent Windows installs. You might want this if your account doesn't have admin permissions, to avoid interfering with any software installed on the system, or to apply the best practices of DevOps to your development environment. Set up a new machine in minutes instead of hours and keep it up-to-date just as quickly.
+Paltry creates and updates a portable development environment for recent Windows installs. You might want this if your account doesn't have admin permissions, to avoid interfering with any software installed on the system, or to apply the best practices of DevOps to your development environment. Live in [a paradise](/a-paltry-paradise) where setting up a new machine takes minutes instead of hours and keep it up-to-date just as quickly.
