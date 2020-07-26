@@ -25,16 +25,22 @@ body {
   }
 }
 
+.row {
+  display: flex;
+}
+
 body > header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
   font-family: sans-serif;
   background-color: rgba(96, 96, 0, 0.2);
-  padding-top: 0.25em;
+  padding-top: 0.5em;
   padding-bottom: 0.25em;
   border-bottom: 1px solid rgba(var(--text-color), 0.25);
+
   a {
     text-decoration: none;
   }
@@ -65,6 +71,107 @@ body > header {
       margin-top: -0.31em;
       color: rgba(var(--text-color), 0.25);
       pointer-events: none;
+    }
+  }
+}
+
+form.subscribe {
+  font-size: 0.5em;
+  border-bottom: 1px solid rgba(var(--text-color), 0.5);
+  padding: 1em 1em;
+  section {
+    max-width: 64em;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.25em;
+    color: rgba(var(--text-color), 0.85);
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 0.25em;
+  }
+  .row {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    @media (orientation: landscape) {
+      font-size: inherit;
+    }
+    .field {
+      margin-bottom: 0.5em;
+      @media (orientation: landscape) {
+        margin-bottom: 0;
+      }
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      font-size: 1.5em;
+      @media (orientation: landscape) {
+        flex-direction: row;
+        margin-right: 0.5em;
+      }
+    }
+    label {
+      margin-bottom: 0.25em;
+      margin-right: 0.5em;
+    }
+    .field,
+    label,
+    input,
+    button {
+      width: 100%;
+      @media (orientation: landscape) {
+        width: inherit;
+      }
+    }
+    input,
+    button {
+      color: rgba(var(--text-color), 0.75);
+      background-color: var(--bg-color);
+      border: 0.05em solid rgba(var(--text-color), 0.5);
+      border-radius: 0.25em;
+      outline: none;
+      padding: 0.25em 0.5em;
+      &:hover {
+        border-color: rgba(var(--text-color), 0.75);
+      }
+      &:active,
+      &:focus {
+        color: var(--text-color);
+        border-color: var(--text-color);
+      }
+    }
+    input {
+      box-sizing: border-box;
+      font-size: 1em;
+      &::placeholder {
+        color: rgba(var(--text-color), 0.5);
+      }
+    }
+    button {
+      font-size: 1.5em;
+      align-self: flex-end;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:disabled {
+        color: rgba(var(--text-color), 0.5);
+        border: 0.05em solid rgba(var(--text-color), 0.25);
+        cursor: not-allowed;
+        &:hover {
+          border-color: inherit;
+        }
+      }
+    }
+    .errors {
+      display: none;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5em;
+      color: rgba(255, 0, 0, 0.85);
+      padding-top: 0.5em;
     }
   }
 }

@@ -13,6 +13,7 @@ footer-links:
   youtube: barelyfunctionaldev
 # disqus:
 google_analytics: UA-27540993-2
+activecampaign_analytics: 610704886
 permalink: /:slug
 plugins:
   - jekyll-seo-tag

@@ -1,0 +1,105 @@
+<form
+  method="POST"
+  action="https://okwolf.activehosted.com/proc.php"
+  class="subscribe"
+>
+  <h1>welcome wolf words when written:</h1>
+  <section>
+    <input type="hidden" name="u" value="1" />
+    <input type="hidden" name="f" value="1" />
+    <input type="hidden" name="s" />
+    <input type="hidden" name="c" value="0" />
+    <input type="hidden" name="m" value="0" />
+    <input type="hidden" name="act" value="sub" />
+    <input type="hidden" name="v" value="2" />
+    <div class="row">
+      <div class="field">
+        <label>
+          full name*
+        </label>
+        <input
+          type="text"
+          name="fullname"
+          placeholder="type your name"
+          required
+        />
+      </div>
+      <div class="field">
+        <label>
+          email*
+        </label>
+        <input
+          type="email"
+          name="email"
+          placeholder="type your email"
+          required
+        />
+      </div>
+      <button type="submit">
+        do it
+      </button>
+      <div class="errors"></div>
+    </div>
+  </section>
+</form>
+
+<script type="module">
+  const injectScript = src => {
+    const head = document.querySelector("head");
+    const injectedScript = document.createElement("script");
+    injectedScript.type = "text/javascript";
+    injectedScript.charset = "utf-8";
+    injectedScript.src = src;
+    head.appendChild(injectedScript);
+  };
+
+  const forAllForms = callback =>
+    document
+      .querySelectorAll("form.subscribe")
+      .forEach(callback);
+  const setFormsDisabled = disabled =>
+    forAllForms(
+      form =>
+        (form.querySelector(
+          "button[type=submit]"
+        ).disabled = disabled)
+    );
+
+  window._show_error = (id, message, html) => {
+    setFormsDisabled(false);
+    forAllForms(form => {
+      const errors = form.querySelector(".errors");
+      errors.innerHTML = message;
+      errors.style.display = "block";
+    });
+  };
+  window._show_thank_you = (
+    id,
+    message,
+    trackcmp_url,
+    email
+  ) => {
+    setFormsDisabled(false);
+    forAllForms(
+      form => (form.innerHTML = `<h1>${message}</h1>`)
+    );
+    injectScript(trackcmp_url);
+  };
+  forAllForms(form => {
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      setFormsDisabled(true);
+      forAllForms(
+        form =>
+          (form.querySelector(".errors").style.display =
+            "none")
+      );
+
+      injectScript(
+        `${form.action}?${new URLSearchParams(
+          new FormData(form)
+        )}&jsonp=true`
+      );
+    });
+  });
+</script>

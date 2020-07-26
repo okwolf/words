@@ -28,22 +28,24 @@
 
   <body>
     <header>
-      <a href="/wolf"><img src="/images/wolf.png" /></a>
-
-      <div class="title-container">
-      {% if page.draft %}
-        <a href="/drafts">
-      {% else %}
-        <a href="/">
-      {% endif %}
-          <span class="wolf">wolf</span>
-          <span class="words">WORDS</span>
-        </a>
-        <div class="description">
-          {{ site.description }}
+      <div class="row">
+        <a href="/wolf"><img src="/images/wolf.png" /></a>
+        <div class="title-container">
+        {% if page.draft %}
+          <a href="/drafts">
+        {% else %}
+          <a href="/">
+        {% endif %}
+            <span class="wolf">wolf</span>
+            <span class="words">WORDS</span>
+          </a>
+          <div class="description">
+            {{ site.description }}
+          </div>
         </div>
       </div>
     </header>
+    {% include subscribe.html %}
 
     <main>
       {{ content }}
