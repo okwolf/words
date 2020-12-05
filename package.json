@@ -6,8 +6,9 @@
     "prettier": "2.0.5"
   },
   "scripts": {
+    "postinstall": "gem install jekyll bundler --conservative && bundle install && gem uninstall eventmachine --force && gem install eventmachine --platform ruby",
     "format": "prettier --write **/*.{md,scss}",
-    "start": "jekyll serve --livereload"
+    "start": "bundle exec jekyll serve --livereload"
   },
   "prettier": {
     "printWidth": 60,
